@@ -1,4 +1,5 @@
 // define the book model
+//// books.js - Shemal Grey - 301020458 - Book list
 import booksModel from '../models/books.js';
 
 /* GET books List page. READ */
@@ -67,7 +68,7 @@ export function processEditPage(req, res, next) {
     router.post('/:id', (req, res) => {
         let id = req.params.id;
         let book = {};
-        book.title = req.body.title;
+        book.name = req.body.name;
         book.author = req.body.author;
         book.published = req.body.published;
         book.description = req.body.description;
